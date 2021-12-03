@@ -29,4 +29,12 @@ const Profile = ({ avatar, username, tag, location, stats }) => {
   );
 };
 
+Profile.propTypes = {
+  username: PropTypes.string,
+  avatar: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  stats: PropTypes.number,
+};
+
 export default Profile;
