@@ -1,6 +1,7 @@
 import "./App.css";
 import Profile from "./Components/Profile/Profile";
 import Statistics from "./Components/Statistics/Statistics";
+import FriendList from "./Components/FriendList/FriendList";
 
 const App = (props) => {
   return (
@@ -13,6 +14,7 @@ const App = (props) => {
         stats={props.user.stats}
       />
       <Statistics title={props.data.title} stats={props.data} />
+      <FriendList friends={props.friends} />,
     </div>
   );
 };

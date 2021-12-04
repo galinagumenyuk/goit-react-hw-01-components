@@ -13,7 +13,12 @@ const Item = ({ name, value }) => {
 
 const Statistics = ({ title, stats }) => {
   let statItem = stats.map((stat) => (
-    <Item name={stat.label} id={stat.id} value={stat.percentage} />
+    <Item
+      key={stat.id}
+      name={stat.label}
+      id={stat.id}
+      value={stat.percentage}
+    />
   ));
   return (
     <section className={s.statistics}>
