@@ -34,7 +34,7 @@ Profile.propTypes = {
   avatar: PropTypes.string,
   tag: PropTypes.string,
   location: PropTypes.string,
-  stats: PropTypes.number,
+  stats: PropTypes.object,
 };
 
 export default Profile;

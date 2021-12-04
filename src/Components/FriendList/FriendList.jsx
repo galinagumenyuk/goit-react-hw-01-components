@@ -33,9 +33,10 @@ const FriendList = (friends) => {
   );
 };
 
-// FriendList.propTypes = {
-//   title: PropTypes.string,
-//   stats: PropTypes.arrayOf(PropTypes.shape),
-// };
+FriendList.propTypes = {
+  name: PropTypes.string,
+  avatar: PropTypes.string,
+  isOnline: PropTypes.bool,
+};
 
 export default FriendList;
