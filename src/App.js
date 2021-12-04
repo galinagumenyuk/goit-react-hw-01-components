@@ -1,5 +1,6 @@
 import "./App.css";
 import Profile from "./Components/Profile/Profile";
+import Statistics from "./Components/Statistics/Statistics";
 
 const App = (props) => {
   return (
@@ -11,6 +12,7 @@ const App = (props) => {
         avatar={props.user.avatar}
         stats={props.user.stats}
       />
+      <Statistics title={props.data.title} stats={props.data} />
     </div>
   );
 };
